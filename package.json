@@ -11,7 +11,8 @@
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "framer-motion": "^10.16.12",
-    "next": "14.0.3",
+    "next": "13.5.7-canary.37",
+    "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18"
   },
