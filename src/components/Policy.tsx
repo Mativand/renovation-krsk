@@ -3,9 +3,9 @@ import {Link} from "@nextui-org/react";
 
 export const Policy = () => {
     return (
-        <p className="text-sm">
+        <p className="text-xs">
             Нажимая на кнопку, вы соглашаетесь с
-            <Link size="sm" href={'#'} className={'cursor-pointer hover:text-gray-300'}>политикой конфиденциальности</Link>
+            <Link href={'#'} className={'cursor-pointer hover:text-gray-300 text-xs underline'}>политикой конфиденциальности</Link>
         </p>
     );
 };
