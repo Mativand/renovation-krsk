@@ -2,6 +2,7 @@
 
 import React, {useEffect, useRef, useState} from 'react';
 import {Radio, RadioGroup, Slider} from "@nextui-org/react";
+import {Policy} from "@/components/Policy";
 
 type renovationType = {
     name: string,
@@ -63,9 +64,7 @@ export const MiniCalculator = () => {
                 <input type="text" className="w-2/3 p-2 rounded-l" placeholder="Ваш телефон"/>
                 <button className="bg-blue-500 text-white px-4 py-2 rounded-r">Отправить</button>
             </div>
-            <p className="text-xs">
-                Нажимая на кнопку, вы соглашаетесь с <a className="underline" href="#">политикой конфиденциальности</a>
-            </p>
+            <Policy/>
         </div>
     );
 };
