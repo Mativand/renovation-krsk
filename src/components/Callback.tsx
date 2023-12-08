@@ -1,4 +1,6 @@
-import { FC, ReactNode, useState } from 'react';
+'use client'
+
+import { FC, ReactNode } from 'react';
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import {Input} from "@nextui-org/input";
 import {WhatsAppCallback} from "@/components/WhatsAppCallback";
