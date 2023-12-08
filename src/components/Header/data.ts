@@ -1,6 +1,6 @@
-import {IPageName, IServiceItem} from "@/components/Header/types";
+import {ILink, IServiceItem} from "@/components/Header/types";
 
-export const pageNames: IPageName[] = [
+export const pageNames: ILink[] = [
     {en: 'portfolio', ru: 'Наши работы'},
     {en: 'reviews', ru: 'Отзывы'},
     {en: 'about', ru: 'О нас'},
@@ -21,9 +21,26 @@ export const serviceList: IServiceItem[] = [
     {
         name: {en: 'dizajn-interera', ru: 'Дизайн интерьера'},
         subserviceList: [
-            {en: 'skandinavskij-stil-interer', ru: 'Скандинавский стиль'},
-            {en: 'stil-haj-tek-interer', ru: 'Стиль хай-тек'},
-            {en: 'kosmeticheskiy-remont-kvartir', ru: 'Косметический'},
+            { en: 'apple', ru: 'яблоко' },
+            { en: 'banana', ru: 'банан' },
+            { en: 'car', ru: 'машина' },
+            { en: 'dog', ru: 'собака' },
+            { en: 'elephant', ru: 'слон' },
+            { en: 'flower', ru: 'цветок' },
+            { en: 'guitar', ru: 'гитара' },
+            { en: 'house', ru: 'дом' },
+            { en: 'ice cream', ru: 'мороженое' },
+            { en: 'jazz', ru: 'джаз' },
+            { en: 'kite', ru: 'воздушный змей' },
+            { en: 'lion', ru: 'лев' },
+            { en: 'moon', ru: 'луна' },
+            { en: 'notebook', ru: 'ноутбук' },
+            { en: 'orange', ru: 'апельсин' },
+            { en: 'piano', ru: 'пианино' },
+            { en: 'queen', ru: 'королева' },
+            { en: 'rose', ru: 'роза' },
+            { en: 'sun', ru: 'солнце' },
+            { en: 'tree', ru: 'дерево' },
         ]
     },
     {
