@@ -1,9 +1,9 @@
-export interface IPageName {
+export interface ILink {
     en: string
     ru: string
 }
 
 export interface IServiceItem {
-    name: IPageName
-    subserviceList: IPageName[]
+    name: ILink
+    subserviceList: ILink[]
 }
