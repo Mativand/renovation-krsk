@@ -6,10 +6,9 @@ import {Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link} fro
 import {FaCalculator, FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
 import {Callback} from "@/components/Callback";
 import {HoverDropdown} from "@/components/Header/HoverDropdown";
+import {Call} from "@/components/features/Call";
 
 export const Header = () => {
-    const phoneNumber: string = '+7(999)999-99-99';
-    const schedule: string = 'с 9:00 до 21:00 без выходных';
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -26,10 +25,9 @@ export const Header = () => {
                         )}
                     </nav>
                     <div>
-                        <p>{phoneNumber}</p>
-                        <p>{schedule}</p>
+                        <Call/>
                         <Callback>
-                            <u className={'cursor-pointer hover:text-gray-300'}>Заказать звонок</u>
+                            <u className={'text-sm cursor-pointer hover:text-gray-200'}>Заказать звонок</u>
                         </Callback>
                     </div>
                     <div>
