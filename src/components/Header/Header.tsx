@@ -1,8 +1,6 @@
-'use client'
-
-import React, {useState} from 'react';
+import React from 'react';
 import {pageNames, serviceList} from "@/components/Header/data";
-import {Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link} from "@nextui-org/react";
+import {Button, Link} from "@nextui-org/react";
 import {FaCalculator, FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
 import {Callback} from "@/components/Callback";
 import {HoverDropdown} from "@/components/Header/HoverDropdown";
@@ -10,13 +8,11 @@ import {Call} from "@/components/features/Call";
 
 export const Header = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
         <header className="bg-gray-800 p-4">
             <div className="container mx-auto">
                 <div className="flex items-center justify-between">
-                    <p className="font-bold text-inherit">REMONT</p>
+                    <Link href={'/'} className="font-bold text-inherit">REMONT</Link>
                     <nav className="space-x-4">
                         {pageNames.map(item =>
                             <Link key={item.en} className="hover:text-gray-300" color="foreground" href={item.en}>
