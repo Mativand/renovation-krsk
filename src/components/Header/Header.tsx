@@ -5,6 +5,7 @@ import {pageNames, serviceList} from "@/components/Header/data";
 import {Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link} from "@nextui-org/react";
 import {FaCalculator, FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
 import {Callback} from "@/components/Callback";
+import {HoverDropdown} from "@/components/Header/HoverDropdown";
 
 export const Header = () => {
     const phoneNumber: string = '+7(999)999-99-99';
@@ -52,20 +53,7 @@ export const Header = () => {
                 <div className="mt-4">
                     <nav className="flex justify-between">
                         {serviceList.map(item =>
-                            <Dropdown
-                                key={item.name.en}
-                            >
-                                <DropdownTrigger>
-                                    <Link href='#' color={'foreground'}>{item.name.ru}</Link>
-                                </DropdownTrigger>
-                                <DropdownMenu aria-label='Dynamic Actions' items={item.subserviceList}>
-                                    {(_item) => (
-                                        <DropdownItem key={_item.en}>
-                                            {_item.ru}
-                                        </DropdownItem>
-                                    )}
-                                </DropdownMenu>
-                            </Dropdown>
+                            <HoverDropdown key={item.name.en} item={item}/>
                         )}
                     </nav>
                 </div>
