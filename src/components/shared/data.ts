@@ -1,6 +1,6 @@
-import {ILink, IServiceItem} from "@/components/Header/types";
+import {ILink, IServiceItem} from "@/components/shared/types";
 
-export const pageNames: ILink[] = [
+export const pageList: ILink[] = [
     {en: 'portfolio', ru: 'Наши работы'},
     {en: 'reviews', ru: 'Отзывы'},
     {en: 'about', ru: 'О нас'},

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useRef, useEffect } from 'react';
-import {IServiceItem} from "@/components/Header/types";
+import {IServiceItem} from "@/components/shared/types";
 import {Link} from "@nextui-org/react";
 
 interface DropdownProps {

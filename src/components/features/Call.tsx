@@ -5,7 +5,7 @@ import {PHONE_NUMBER, SCHEDULE} from "@/components/shared/consts";
 export const Call = () => {
     return (
         <div>
-            <div className={'relative'}>
+            <div className={'relative cursor-pointer'}>
                 <div className={'absolute text-yellow-300 top-0 -left-8'}>
                     <IoPhonePortraitOutline size="1.7em"/>
                 </div>

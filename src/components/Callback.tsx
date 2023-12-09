@@ -27,7 +27,7 @@ export const Callback: FC<Props> = ({ children }) => {
                                 <Input type="text" label="Как вас зовут?" size="sm"/>
                                 <Input type="tel" label="Ваш телефон" size="sm"/>
                                 <WhatsAppCallback/>
-                                <Policy/>
+                                <Policy label='Нажимая на кнопку, вы соглашаетесь с'/>
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="primary" onPress={onClose}>

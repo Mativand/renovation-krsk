@@ -1,10 +1,11 @@
 import React from 'react';
-import {pageNames, serviceList} from "@/components/Header/data";
+import {pageList, serviceList} from "@/components/shared/data";
 import {Button, Link} from "@nextui-org/react";
 import {FaCalculator, FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
 import {Callback} from "@/components/Callback";
 import {HoverDropdown} from "@/components/Header/HoverDropdown";
 import {Call} from "@/components/features/Call";
+import {CalculateBtn} from "@/components/features/CalculateBtn";
 
 export const Header = () => {
 
@@ -14,7 +15,7 @@ export const Header = () => {
                 <div className="flex items-center justify-between">
                     <Link href={'/'} className="font-bold text-inherit">REMONT</Link>
                     <nav className="space-x-4">
-                        {pageNames.map(item =>
+                        {pageList.map(item =>
                             <Link key={item.en} className="hover:text-gray-300" color="foreground" href={item.en}>
                                 {item.ru}
                             </Link>
@@ -27,10 +28,7 @@ export const Header = () => {
                         </Callback>
                     </div>
                     <div>
-                        <Button as={Link} color="warning" href="#" variant="flat">
-                            <FaCalculator/>
-                            Рассчитать стоимость
-                        </Button>
+                        <CalculateBtn label={'Рассчитать стоимость'}/>
                         <div className="flex items-center mt-4 space-x-3">
                             <Link href={"#"} color={"foreground"}>
                                 <FaWhatsapp size="1.5em"/>

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {Link} from "@nextui-org/react";
 
-export const Policy = () => {
+export const Policy: FC<{label?: string}> = ({label}) => {
     return (
         <div className="text-xs">
-            <div>Нажимая на кнопку, вы соглашаетесь с</div>
-            <Link href={'#'} className={'cursor-pointer hover:text-gray-300 text-xs underline'}>политикой конфиденциальности</Link>
+            {label && <div>{label}</div>}
+            <Link href={'#'} className={'cursor-pointer hover:text-gray-300 text-xs underline'}>{`политик${label ? 'ой' : 'а'}`} конфиденциальности</Link>
         </div>
     );
 };

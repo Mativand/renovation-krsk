@@ -64,7 +64,7 @@ export const MiniCalculator = () => {
                 <input type="text" className="w-2/3 p-2 rounded-l" placeholder="Ваш телефон"/>
                 <button className="bg-blue-500 text-white px-4 py-2 rounded-r">Отправить</button>
             </div>
-            <Policy/>
+            <Policy label='Нажимая на кнопку, вы соглашаетесь с'/>
         </div>
     );
 };
