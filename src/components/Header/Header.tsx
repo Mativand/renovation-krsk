@@ -1,12 +1,13 @@
 import React from 'react';
-import {pageList, serviceList} from "@/components/shared/data";
+import {pageList, serviceListDesk, serviceListMob} from "@/components/shared/data";
 import {Link} from "@nextui-org/react";
 import {FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
 import {Callback} from "@/components/Callback";
 import {HoverDropdown} from "@/components/Header/HoverDropdown";
-import {Call} from "@/components/features/Call";
-import {CalculateBtn} from "@/components/features/CalculateBtn";
-import s from './Header.module.scss';
+import {Call} from "@/components/features/Call/Call";
+import {CalculateBtn} from "@/components/features/CalculateBtn/CalculateBtn";
+import s from './styles.module.scss';
+import {BurgerMenu} from "@/components/features/BurgerMenu/BurgerMenu";
 
 export const Header = () => {
 
@@ -14,6 +15,9 @@ export const Header = () => {
         <header className={s.header}>
             <div className={s.cont}>
                 <div className={s.top}>
+                    <div className={s.burger}>
+                        <BurgerMenu/>
+                    </div>
                     <Link href={'/'} className={s.logo}>REMONT</Link>
                     <nav className={s.menu}>
                         {pageList.map(item =>
@@ -22,7 +26,7 @@ export const Header = () => {
                             </Link>
                         )}
                     </nav>
-                    <div>
+                    <div className={s.callback_cont}>
                         <Call/>
                         <Callback>
                             <span className={s.callback}>Заказать звонок</span>
@@ -44,8 +48,13 @@ export const Header = () => {
                     </div>
                 </div>
                 <div className={s.bottom}>
-                    <nav className={s.menu}>
-                        {serviceList.map(item =>
+                    <nav className={s.menu_mob}>
+                        {serviceListMob.map(item =>
+                            <HoverDropdown key={item.name.en} item={item}/>
+                        )}
+                    </nav>
+                    <nav className={s.menu_desk}>
+                        {serviceListDesk.map(item =>
                             <HoverDropdown key={item.name.en} item={item}/>
                         )}
                     </nav>

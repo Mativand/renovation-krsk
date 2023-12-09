@@ -1,0 +1,53 @@
+.header {
+
+  @apply bg-gray-800 p-4;
+
+  .cont {
+    @apply container mx-auto;
+
+    .top {
+      @apply pb-4 sm:pb-0 flex items-center justify-between;
+
+      .logo {
+        @apply font-bold text-inherit;
+      }
+
+      .menu {
+        @apply hidden sm:flex space-x-4;
+
+        .item {
+          @apply hover:text-gray-300;
+        }
+
+      }
+
+      .callback_cont {
+        text-align: end;
+
+        .callback {
+          @apply sm:text-sm cursor-pointer underline hover:text-gray-200;
+        }
+
+      }
+
+      .social {
+        @apply hidden sm:flex items-center mt-4 space-x-3;
+      }
+
+    }
+
+    .bottom {
+
+      .menu_mob {
+        @apply grid grid-cols-2 gap-6 sm:hidden text-center border-t-1.5 pt-4;
+      }
+
+      .menu_desk {
+        @apply hidden sm:flex justify-between mt-4;;
+      }
+
+    }
+
+  }
+
+}
