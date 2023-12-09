@@ -1,0 +1,15 @@
+.wrapper {
+  @apply w-full p-0 m-0 bg-gradient-to-r from-sky-500 to-indigo-500;
+
+  .cont {
+    @apply container mx-auto flex justify-between;
+
+    .text_content {
+      @apply flex items-center px-8 sm:px-0;
+    }
+
+    .calculator_cont {
+      @apply hidden sm:block;
+    }
+  }
+}
