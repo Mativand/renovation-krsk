@@ -1,0 +1,27 @@
+.cont {
+
+  .phone_cont {
+
+    @apply relative cursor-pointer;
+
+    .icon {
+
+      @apply hidden sm:block absolute text-yellow-300 top-0 -left-8;
+
+    }
+
+    .phone {
+
+      @apply text-xl;
+
+    }
+
+  }
+
+  .schedule {
+
+    @apply hidden sm:block text-xs text-gray-300;
+
+  }
+
+}

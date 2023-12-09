@@ -1,17 +1,18 @@
 import React from 'react';
 import {IoPhonePortraitOutline} from "react-icons/io5";
 import {PHONE_NUMBER, SCHEDULE} from "@/components/shared/consts";
+import s from './styles.module.scss';
 
 export const Call = () => {
     return (
-        <div>
-            <div className={'relative cursor-pointer'}>
-                <div className={'absolute text-yellow-300 top-0 -left-8'}>
+        <div className={s.cont}>
+            <div className={s.phone_cont}>
+                <div className={s.icon}>
                     <IoPhonePortraitOutline size="1.7em"/>
                 </div>
-                <span className={'text-xl'}>{PHONE_NUMBER}</span>
+                <span className={s.phone}>{PHONE_NUMBER}</span>
             </div>
-            <p className={'text-xs text-gray-300'}>{SCHEDULE}</p>
+            <p className={s.schedule}>{SCHEDULE}</p>
         </div>
     );
 };
