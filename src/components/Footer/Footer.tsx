@@ -1,14 +1,15 @@
 import {Button, Link} from "@nextui-org/react";
 import React from "react";
 import {Policy} from "@/components/Policy";
-import {Call} from "@/components/features/Call";
+import {Call} from "@/components/features/Call/Call";
 import {Location} from "@/components/features/Location";
 import {Agreement} from "@/components/features/Agreement";
 import {ILink} from "@/components/shared/types";
 import {pageList} from "@/components/shared/data";
-import {CalculateBtn} from "@/components/features/CalculateBtn";
+import {CalculateBtn} from "@/components/features/CalculateBtn/CalculateBtn";
 import {Callback} from "@/components/Callback";
 import { PiPhoneIncomingThin } from "react-icons/pi";
+import s from './styles.module.scss';
 
 const serviceList: ILink[] = [
     {en: 'remont-kvartir', ru: 'Ремонт квартир'},
@@ -25,14 +26,15 @@ const links: {title: string, list: ILink[]}[] = [
 
 export const Footer = () => {
     return (
-        <footer className="bg-gray-800 text-white p-4">
-            <div className="container mx-auto">
-                <div className="flex justify-between space-x-10">
+        <footer className={s.footer}>
+            <div className={s.cont}>
+
+                <div className={s.desk}>
                     <div>
-                        <Link href={'/'} className="font-bold text-inherit">REMONT</Link>
+                        <Link href={'/'} className={s.logo}>REMONT</Link>
                         <Policy/>
                     </div>
-                    <div className={'space-y-4'}>
+                    <div className={s.col2}>
                         <Call/>
                         <Location/>
                         <Agreement/>
@@ -42,9 +44,9 @@ export const Footer = () => {
                             <p className={'mb-4'}>
                                 {obj.title}
                             </p>
-                            <nav className={'flex flex-col'}>
+                            <nav className={s.menu}>
                                 {obj.list.map(item =>
-                                    <Link key={item.en} href={item.en} className={'text-inherit underline'}>
+                                    <Link key={item.en} href={item.en} className={s.link}>
                                         {item.ru}
                                     </Link>
                                 )}
@@ -59,6 +61,39 @@ export const Footer = () => {
                                 Обратный звонок
                             </Button>
                         </Callback>
+                    </div>
+                </div>
+
+                <div className={s.mobile}>
+                    <Link href={'/'} className={s.logo}>REMONT</Link>
+                    <Policy/>
+                    <div className={'w-1/2 space-y-8'}>
+                        <Call/>
+                        <Location/>
+                        <Agreement/>
+                    </div>
+                    <CalculateBtn label={'Калькулятор ремонта'}/>
+                    <Callback>
+                        <Button color="warning" variant="flat">
+                            <PiPhoneIncomingThin size={'1.7em'}/>
+                            Обратный звонок
+                        </Button>
+                    </Callback>
+                    <div className={'space-y-8'}>
+                        {links.map(obj =>
+                            <div key={obj.title}>
+                                <p className={'mb-4'}>
+                                    {obj.title}
+                                </p>
+                                <nav className={s.menu}>
+                                    {obj.list.map(item =>
+                                        <Link key={item.en} href={item.en} className={s.link}>
+                                            {item.ru}
+                                        </Link>
+                                    )}
+                                </nav>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

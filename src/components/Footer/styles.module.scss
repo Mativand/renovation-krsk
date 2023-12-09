@@ -1,0 +1,36 @@
+.footer {
+  @apply bg-gray-700 text-white p-4;
+
+  .cont {
+    @apply container mx-auto;
+
+    .logo {
+      @apply font-bold text-inherit;
+    }
+
+    .link {
+      @apply text-inherit underline;
+    }
+
+    .desk {
+      @apply hidden sm:flex justify-between space-x-10;
+
+      .col2 {
+        @apply space-y-4;
+      }
+
+      .menu {
+        @apply flex flex-col;
+      }
+    }
+
+    .mobile {
+      @apply flex flex-col items-center space-y-8;
+
+      .menu {
+        @apply grid grid-cols-2;
+      }
+    }
+  }
+
+}
