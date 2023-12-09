@@ -1,0 +1,16 @@
+.btn {
+
+  @media (max-width: 640px) {
+
+  min-width: 20px;
+  height: 56px;
+
+  }
+
+  .label {
+
+    @apply hidden sm:inline-block;
+
+  }
+
+}
