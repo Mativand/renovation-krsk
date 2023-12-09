@@ -1,0 +1,46 @@
+.header {
+
+  @apply bg-gray-800 p-4;
+
+  .cont {
+    @apply container mx-auto;
+
+    .top {
+      @apply flex items-center justify-between;
+
+      .logo {
+        @apply font-bold text-inherit;
+      }
+
+      .menu {
+        @apply space-x-4;
+
+        .item {
+          @apply hover:text-gray-300;
+        }
+
+      }
+
+      .callback {
+        @apply text-sm cursor-pointer underline hover:text-gray-200;
+      }
+
+      .social {
+        @apply flex items-center mt-4 space-x-3;
+      }
+
+    }
+
+    .bottom {
+
+      @apply mt-4;
+
+      .menu {
+        @apply flex justify-between;
+      }
+
+    }
+
+  }
+
+}

@@ -1,22 +1,23 @@
 import React from 'react';
 import {pageList, serviceList} from "@/components/shared/data";
-import {Button, Link} from "@nextui-org/react";
-import {FaCalculator, FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
+import {Link} from "@nextui-org/react";
+import {FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
 import {Callback} from "@/components/Callback";
 import {HoverDropdown} from "@/components/Header/HoverDropdown";
 import {Call} from "@/components/features/Call";
 import {CalculateBtn} from "@/components/features/CalculateBtn";
+import s from './Header.module.scss';
 
 export const Header = () => {
 
     return (
-        <header className="bg-gray-800 p-4">
-            <div className="container mx-auto">
-                <div className="flex items-center justify-between">
-                    <Link href={'/'} className="font-bold text-inherit">REMONT</Link>
-                    <nav className="space-x-4">
+        <header className={s.header}>
+            <div className={s.cont}>
+                <div className={s.top}>
+                    <Link href={'/'} className={s.logo}>REMONT</Link>
+                    <nav className={s.menu}>
                         {pageList.map(item =>
-                            <Link key={item.en} className="hover:text-gray-300" color="foreground" href={item.en}>
+                            <Link key={item.en} className={s.item} color="foreground" href={item.en}>
                                 {item.ru}
                             </Link>
                         )}
@@ -24,12 +25,12 @@ export const Header = () => {
                     <div>
                         <Call/>
                         <Callback>
-                            <u className={'text-sm cursor-pointer hover:text-gray-200'}>Заказать звонок</u>
+                            <span className={s.callback}>Заказать звонок</span>
                         </Callback>
                     </div>
                     <div>
                         <CalculateBtn label={'Рассчитать стоимость'}/>
-                        <div className="flex items-center mt-4 space-x-3">
+                        <div className={s.social}>
                             <Link href={"#"} color={"foreground"}>
                                 <FaWhatsapp size="1.5em"/>
                             </Link>
@@ -42,8 +43,8 @@ export const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-4">
-                    <nav className="flex justify-between">
+                <div className={s.bottom}>
+                    <nav className={s.menu}>
                         {serviceList.map(item =>
                             <HoverDropdown key={item.name.en} item={item}/>
                         )}
