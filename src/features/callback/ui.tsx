@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, ReactNode } from 'react';
+import {cloneElement, FC, ReactNode, Children, MouseEvent, ReactElement} from 'react';
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import {Input} from "@nextui-org/input";
 import {WhatsAppCallback} from "@/features/whatsAppCallback/ui";
@@ -13,11 +13,20 @@ interface Props {
 export const Callback: FC<Props> = ({ children }) => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
+    const handleChildClick = (event: MouseEvent<HTMLElement>) => {
+        onOpen();
+        event.stopPropagation();
+    };
+
+    const childrenWithOnClick = Children.map(children, (child) =>
+        cloneElement(child as ReactElement, {
+            onClick: handleChildClick,
+        })
+    );
+
     return (
         <>
-            <div onClick={onOpen}>
-                {children}
-            </div>
+            {childrenWithOnClick}
             <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
                 <ModalContent>
                     {(onClose) => (
