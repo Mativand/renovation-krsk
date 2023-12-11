@@ -1,10 +1,8 @@
-
 import type {Metadata} from 'next'
 import './globals.scss'
-import React from "react";
 import {Providers} from "@/app/providers";
-import {Header} from "@/components/Header/Header";
-import {Footer} from "@/components/Footer/Footer";
+import {Header} from "@/widgets/header";
+import {Footer} from "@/widgets/footer";
 
 export const metadata: Metadata = {
     title: 'Create Next App',

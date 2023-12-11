@@ -1,28 +1,13 @@
 import {Button, Link} from "@nextui-org/react";
-import React from "react";
-import {Policy} from "@/components/Policy";
-import {Call} from "@/components/features/Call/Call";
-import {Location} from "@/components/features/Location";
-import {Agreement} from "@/components/features/Agreement";
-import {ILink} from "@/components/shared/types";
-import {pageList} from "@/components/shared/data";
-import {CalculateBtn} from "@/components/features/CalculateBtn/CalculateBtn";
-import {Callback} from "@/components/Callback";
 import { PiPhoneIncomingThin } from "react-icons/pi";
+import {Policy} from "@/features/policy";
+import {Call} from "@/features/call";
+import {Agreement} from "@/features/agreement/ui";
+import {links} from "@/widgets/footer/data";
+import {CalculateBtn} from "@/features/calculateBtn";
+import {Callback} from "@/features/callback";
+import {Location} from "@/features/location";
 import s from './styles.module.scss';
-
-const serviceList: ILink[] = [
-    {en: 'remont-kvartir', ru: 'Ремонт квартир'},
-    {en: 'dizajn-interera', ru: 'Дизайн интерьера'},
-    {en: 'remont-komnat', ru: 'Ремонт комнат'},
-    {en: 'remont-domov-i-kottedzhej', ru: 'Дома и коттеджи'},
-    {en: 'prochie-uslugi', ru: 'Прочие услуги'},
-]
-
-const links: {title: string, list: ILink[]}[] = [
-    {title: 'О компании', list: pageList},
-    {title: 'Наши услуги', list: serviceList},
-]
 
 export const Footer = () => {
     return (

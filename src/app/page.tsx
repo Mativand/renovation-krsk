@@ -1,4 +1,4 @@
-import {Offer} from "@/components/Offer/Offer";
+import {Offer} from "@/widgets/offer";
 
 export default function Home() {
   return (

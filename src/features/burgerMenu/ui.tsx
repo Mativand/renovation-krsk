@@ -1,11 +1,11 @@
 'use client'
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {IoMdClose} from "react-icons/io";
 import {CiMenuBurger} from "react-icons/ci";
-import {pageList} from "@/components/shared/data";
-import s from "./styles.module.scss";
 import {Link} from "@nextui-org/react";
+import {pageList} from "@/shared/data";
+import s from "./styles.module.scss";
 
 export const BurgerMenu = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);

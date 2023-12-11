@@ -1,7 +1,6 @@
 import React from 'react';
 import { CiLocationOn } from "react-icons/ci";
 
-
 export const Location = () => {
     return (
         <div className={'relative'}>

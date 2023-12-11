@@ -1,13 +1,12 @@
-import React from 'react';
-import {pageList, serviceListDesk, serviceListMob} from "@/components/shared/data";
 import {Link} from "@nextui-org/react";
+import {BurgerMenu} from "../../features/burgerMenu";
+import {HoverDropdown} from "../../features/hoverDropdown";
+import {pageList, serviceListDesk, serviceListMob} from "@/shared/data";
+import {Call} from "@/features/call";
+import {Callback} from "@/features/callback";
+import {CalculateBtn} from "@/features/calculateBtn";
 import {FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
-import {Callback} from "@/components/Callback";
-import {HoverDropdown} from "@/components/Header/HoverDropdown";
-import {Call} from "@/components/features/Call/Call";
-import {CalculateBtn} from "@/components/features/CalculateBtn/CalculateBtn";
 import s from './styles.module.scss';
-import {BurgerMenu} from "@/components/features/BurgerMenu/BurgerMenu";
 
 export const Header = () => {
 

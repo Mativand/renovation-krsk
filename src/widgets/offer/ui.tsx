@@ -1,5 +1,4 @@
-import React from 'react';
-import {MiniCalculator} from "@/components/MiniCalculator";
+import {MiniCalculator} from "@/features/miniCalculator";
 import s from './styles.module.scss';
 
 export const Offer = () => {

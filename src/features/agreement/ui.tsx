@@ -1,4 +1,3 @@
-import React from 'react';
 import { LiaFileContractSolid } from "react-icons/lia";
 import {Link} from "@nextui-org/react";
 

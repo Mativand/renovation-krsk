@@ -2,7 +2,7 @@
 
 import React, {useEffect, useRef, useState} from 'react';
 import {Radio, RadioGroup, Slider} from "@nextui-org/react";
-import {Policy} from "@/components/Policy";
+import {Policy} from "@/features/policy";
 
 type renovationType = {
     name: string,
