@@ -1,6 +1,6 @@
 import {Link} from "@nextui-org/react";
-import {BurgerMenu} from "../../features/burgerMenu";
-import {HoverDropdown} from "../../features/hoverDropdown";
+import {BurgerMenu} from "@/features/burgerMenu";
+import {HoverDropdown} from "@/features/hoverDropdown";
 import {pageList, serviceListDesk, serviceListMob} from "@/shared/data";
 import {Call} from "@/features/call";
 import {Callback} from "@/features/callback";
