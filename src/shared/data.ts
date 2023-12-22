@@ -1,4 +1,4 @@
-import {ILink, IServiceItem} from "@/components/shared/types";
+import {ILink, IServiceItem} from "@/shared/types";
 
 export const pageList: ILink[] = [
     {en: 'portfolio', ru: 'Наши работы'},
