@@ -34,7 +34,7 @@ export const MiniCalculator = () => {
     };
 
     return (
-        <div className="hidden sm:block bg-black py-5 px-10 w-2/6 text-white">
+        <div className="hidden sm:block bg-black py-5 px-10 w-2/6 text-white rounded-xl">
             <p className="text-xl mb-5">
                 Узнайте стоимость ремонта за 5 минут
             </p>
