@@ -12,7 +12,7 @@ import s from './styles.module.scss';
 export const Footer = () => {
     return (
         <footer className={s.footer}>
-            <div className={s.cont}>
+            <div className="main-container">
 
                 <div className={s.desk}>
                     <div>

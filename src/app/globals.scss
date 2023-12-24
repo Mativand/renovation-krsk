@@ -24,4 +24,21 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+  .main-container {
+    @apply mx-auto px-6;
+    max-width: 1300px;
+  }
+
+  header {
+    .main-container {
+      @apply py-3;
+    }
+  }
+
+  main {
+    .main-container {
+      @apply py-6;
+    }
+  }
 }

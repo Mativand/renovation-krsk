@@ -12,7 +12,7 @@ export const Header = () => {
 
     return (
         <header className={s.header}>
-            <div className={s.cont}>
+            <div className="main-container">
                 <div className={s.top}>
                     <div className={s.burger}>
                         <BurgerMenu/>

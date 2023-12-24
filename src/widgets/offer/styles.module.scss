@@ -2,7 +2,7 @@
   @apply w-full p-0 m-0 bg-gradient-to-r from-sky-500 to-indigo-500;
 
   .cont {
-    @apply container mx-auto flex justify-between;
+    @apply flex justify-between;
 
     .text_content {
       @apply flex flex-col justify-center p-4 space-y-4 sm:px-0;
