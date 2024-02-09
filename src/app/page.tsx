@@ -1,10 +1,11 @@
 import {Offer} from "@/widgets/offer";
+import {Reviews} from "@/widgets/reviews";
 
 export default function Home() {
   return (
    <main>
        <Offer/>
-       {/*review*/}
+       <Reviews/>
        {/*portfolio*/}
        {/*price-callback*/}
        {/*steps*/}
