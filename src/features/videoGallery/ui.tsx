@@ -2,7 +2,7 @@
 
 import React, {FC, useEffect, useState} from 'react';
 import {cn, PaginationItemType, usePagination} from "@nextui-org/react";
-import {ChevronIcon} from "@nextui-org/shared-icons";
+import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 
 interface VideoGalleryProps {
     videos: { id: string; title: string; desc: string, url: string }[];
@@ -45,17 +45,17 @@ export const VideoGallery: FC<VideoGalleryProps> = ({ videos }) => {
             </div>
 
             <div className="w-full text-white">
-                <div className="mx-auto w-40">
+                <div className="text-center">
                     <ul className="flex justify-center gap-2 items-center">
                         {range.map((page) => {
                             if (page === PaginationItemType.NEXT) {
                                 return (
-                                    <li key={page} aria-label="next page" className="w-4 h-4">
+                                    <li key={page} aria-label="next page" className="w-10 h-10">
                                         <button
-                                            className="w-full h-full bg-default-200 rounded-full"
+                                            className="w-full h-full bg-default-200 rounded-full flex items-center justify-center"
                                             onClick={onNext}
                                         >
-                                            <ChevronIcon className="rotate-180"/>
+                                            <FaChevronRight size="1.5em"/>
                                         </button>
                                     </li>
                                 );
@@ -63,12 +63,12 @@ export const VideoGallery: FC<VideoGalleryProps> = ({ videos }) => {
 
                             if (page === PaginationItemType.PREV) {
                                 return (
-                                    <li key={page} aria-label="previous page" className="w-4 h-4">
+                                    <li key={page} aria-label="previous page" className="w-10 h-10">
                                         <button
-                                            className="w-full h-full bg-default-200 rounded-full"
+                                            className="w-full h-full bg-default-200 rounded-full flex items-center justify-center"
                                             onClick={onPrevious}
                                         >
-                                            <ChevronIcon/>
+                                            <FaChevronLeft size="1.5em"/>
                                         </button>
                                     </li>
                                 );
@@ -76,14 +76,14 @@ export const VideoGallery: FC<VideoGalleryProps> = ({ videos }) => {
 
                             if (page === PaginationItemType.DOTS) {
                                 return (
-                                    <li key={page} className="w-4 h-4">
+                                    <li key={page} className="w-10 h-10">
                                         ...
                                     </li>
                                 );
                             }
 
                             return (
-                                <li key={page} aria-label={`page ${page}`} className="w-4 h-4">
+                                <li key={page} aria-label={`page ${page}`} className="w-10 h-10">
                                     <button
                                         className={cn(
                                             "w-full h-full bg-default-300 rounded-full",
