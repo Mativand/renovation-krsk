@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./styles.module.scss";
 import {VideoGallery} from "@/features/videoGallery";
+import {Link} from "@nextui-org/react";
 
 const videos = [
     {
@@ -18,6 +19,10 @@ export const Reviews = () => {
     return (
         <section className={s.wrapper}>
             <div className="main-container">
+                <div className="flex text-center sm:text-left justify-between mb-10">
+                    <h1 className="text-3xl">Отзывы клиентов о ремонте и примеры работ</h1>
+                    <Link href={'#'} className="hidden sm:block underline text-xl">Смотреть все работы</Link>
+                </div>
                 <VideoGallery videos={videos}/>
             </div>
         </section>

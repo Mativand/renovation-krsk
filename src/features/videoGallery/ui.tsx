@@ -24,9 +24,9 @@ export const VideoGallery: FC<VideoGalleryProps> = ({ videos }) => {
     return (
         <div className="flex flex-col gap-y-8">
 
-            <div className={'flex justify-between'}>
-                <div className="w-3/5">
-                    <div className="w-4/5 mx-auto overflow-hidden rounded-xl shadow-lg">
+            <div className={'sm:flex justify-between'}>
+                <div className="sm:w-3/5 mb-8 sm:mb-0">
+                    <div className="sm:w-4/5 mx-auto overflow-hidden rounded-xl shadow-lg">
                         <iframe
                             className="w-full h-96 aspect-video"
                             src={videos[currentVideo].url}
@@ -36,7 +36,7 @@ export const VideoGallery: FC<VideoGalleryProps> = ({ videos }) => {
                         </iframe>
                     </div>
                 </div>
-                <div className="w-2/5">
+                <div className="sm:w-2/5 sm:text-left text-center">
                     <div className="w-4/5 mx-auto">
                         <h2 className="text-2xl font-bold mb-4">{videos[currentVideo].title}</h2>
                         <p>{videos[currentVideo].desc}</p>
@@ -46,7 +46,7 @@ export const VideoGallery: FC<VideoGalleryProps> = ({ videos }) => {
 
             <div className="w-full text-white">
                 <div className="mx-auto w-40">
-                    <ul className="flex gap-2 items-center">
+                    <ul className="flex justify-center gap-2 items-center">
                         {range.map((page) => {
                             if (page === PaginationItemType.NEXT) {
                                 return (
