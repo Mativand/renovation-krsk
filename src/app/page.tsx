@@ -1,12 +1,13 @@
 import {Offer} from "@/widgets/offer";
 import {Reviews} from "@/widgets/reviews";
+import {Portfolio} from "@/widgets/portfolio";
 
 export default function Home() {
   return (
    <main>
        <Offer/>
        <Reviews/>
-       {/*portfolio*/}
+       <Portfolio/>
        {/*price-callback*/}
        {/*steps*/}
        {/*types*/}

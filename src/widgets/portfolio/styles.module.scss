@@ -1,0 +1,7 @@
+.wrapper {
+  @apply bg-gray-300 text-gray-600 w-full;
+
+  .cont {
+    @apply container mx-auto flex justify-between py-8;
+  }
+}
