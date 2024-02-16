@@ -1,8 +1,8 @@
-import {MiniCalculator} from "@/features/miniCalculator";
 import s from './styles.module.scss';
-import {DownloadPrice} from "@/features/downloadPrice";
 import {Button} from "@nextui-org/react";
 import {FaFilePdf} from "react-icons/fa";
+import {DownloadPrice} from "@/shared/ui/downloadPrice";
+import {MiniCalculator} from "@/shared/ui/miniCalculator";
 
 export const Offer = () => {
     return (

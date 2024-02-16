@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./styles.module.scss";
-import {VideoGallery} from "@/features/videoGallery";
 import {Link} from "@nextui-org/react";
-import {BlockTitle} from "@/shared/components/blockTitle";
+import {BlockTitle} from "@/shared/ui/blockTitle";
+import {VideoGallery} from "@/shared/ui/videoGallery";
 
 const videos = [
     {

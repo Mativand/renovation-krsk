@@ -1,13 +1,13 @@
 import {Button, Link} from "@nextui-org/react";
 import { PiPhoneIncomingThin } from "react-icons/pi";
-import {Policy} from "@/features/policy";
-import {Call} from "@/features/call";
-import {Agreement} from "@/features/agreement/ui";
 import {links} from "@/widgets/footer/data";
-import {CalculateBtn} from "@/features/calculateBtn";
-import {Callback} from "@/features/callback";
-import {Location} from "@/features/location";
 import s from './styles.module.scss';
+import {Policy} from "@/shared/ui/policy";
+import {Call} from "@/shared/ui/call";
+import {Agreement} from "@/shared/ui/agreement/ui";
+import {CalculateBtn} from "@/shared/ui/calculateBtn";
+import {Callback} from "@/shared/ui/callback";
+import {Location} from "@/shared/ui/location";
 
 export const Footer = () => {
     return (

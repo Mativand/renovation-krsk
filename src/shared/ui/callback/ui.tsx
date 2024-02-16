@@ -3,8 +3,8 @@
 import {cloneElement, FC, ReactNode, Children, MouseEvent, ReactElement} from 'react';
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import {Input} from "@nextui-org/input";
-import {WhatsAppCallback} from "@/features/whatsAppCallback/ui";
-import {Policy} from "@/features/policy/ui";
+import {WhatsAppCallback} from "../whatsAppCallback/ui";
+import {Policy} from "../policy/ui";
 
 interface Props {
     children: ReactNode;

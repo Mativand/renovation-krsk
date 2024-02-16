@@ -1,9 +1,9 @@
 import s from "./styles.module.scss";
 import {Button, Image, Link} from "@nextui-org/react";
-import {BlockTitle} from "@/shared/components/blockTitle";
 import {Input} from "@nextui-org/input";
-import {Policy} from "@/features/policy";
 import { CiDiscount1 } from "react-icons/ci";
+import {BlockTitle} from "@/shared/ui/blockTitle";
+import {Policy} from "@/shared/ui/policy";
 
 const title: string = 'Получите подробную смету и точную стоимость ремонта'
 

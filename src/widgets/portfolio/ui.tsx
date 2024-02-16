@@ -1,8 +1,8 @@
 import s from "./styles.module.scss";
 import {Button, Link} from "@nextui-org/react";
-import {BlockTitle} from "@/shared/components/blockTitle";
-import {PortfolioCard} from "@/shared/components/portfolioCard";
 import {ICard} from "@/widgets/portfolio";
+import {BlockTitle} from "@/shared/ui/blockTitle";
+import {PortfolioCard} from "@/shared/ui/portfolioCard";
 
 const title: string = 'Наши объекты за 2023 год Гарантия на работы 2 года'
 

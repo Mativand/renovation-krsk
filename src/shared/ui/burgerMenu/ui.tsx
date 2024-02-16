@@ -4,7 +4,7 @@ import { useState } from 'react';
 import {IoMdClose} from "react-icons/io";
 import {CiMenuBurger} from "react-icons/ci";
 import {Link} from "@nextui-org/react";
-import {pageList} from "@/shared/data";
+import {pageList} from "../../data";
 import s from "./styles.module.scss";
 
 export const BurgerMenu = () => {

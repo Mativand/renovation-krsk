@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import {Link} from "@nextui-org/react";
-import {IServiceItem} from "@/shared/types";
+import {IServiceItem} from "../../types";
 
 interface DropdownProps {
     item: IServiceItem;

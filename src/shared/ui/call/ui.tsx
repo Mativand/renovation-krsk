@@ -1,5 +1,5 @@
 import {IoPhonePortraitOutline} from "react-icons/io5";
-import {PHONE_NUMBER, SCHEDULE} from "@/shared/consts";
+import {PHONE_NUMBER, SCHEDULE} from "../../consts";
 import s from './styles.module.scss';
 
 export const Call = () => {
