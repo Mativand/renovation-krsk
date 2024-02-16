@@ -1,6 +1,7 @@
 import {Offer} from "@/widgets/offer";
 import {Reviews} from "@/widgets/reviews";
 import {Portfolio} from "@/widgets/portfolio";
+import {PriceCallback} from "@/widgets/priceCallback";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
        <Offer/>
        <Reviews/>
        <Portfolio/>
-       {/*price-callback*/}
+       <PriceCallback/>
        {/*steps*/}
        {/*types*/}
        {/*discount-callback*/}
